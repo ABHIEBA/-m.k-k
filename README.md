@@ -8,7 +8,7 @@
 
 **You can run through :-**
 
-• Local PC ( Not Recommended )
+* Local PC ( Not Recommended )
 • One Click Node Deployment Platforms👇
 - https://www.mintair.xyz/dashboard
 - https://app.easy-node.xyz/
