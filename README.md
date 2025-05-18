@@ -62,14 +62,18 @@ Use one-click node deployment platforms.
 ## IV. Guide & Commands
 
 # Step 1: Update System Packages
+```
 sudo apt-get update && sudo apt-get upgrade -y
-
+```
 # Step 2: Install Required Dependencies
+```
 sudo apt install curl iptables build-essential git wget lz4 jq make gcc nano \
 automake autoconf tmux htop nvme-cli libgbm1 pkg-config libssl-dev \
 libleveldb-dev tar clang bsdmainutils ncdu unzip libleveldb-dev -y
+```
 
 # Step 3: Install Docker (Clean Install)
+```
 sudo apt update -y && sudo apt upgrade -y
 for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do 
   sudo apt-get remove -y $pkg 
@@ -94,34 +98,50 @@ docker-buildx-plugin docker-compose-plugin
 sudo docker run hello-world
 sudo systemctl enable docker
 sudo systemctl restart docker
+```
 
 # Step 4: Install Aztec Node
+```
 bash -i <(curl -s https://install.aztec.network)
+```
 
 # Step 5: Add Aztec to PATH
+```
 echo 'export PATH="$HOME/.aztec/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
+```
 
 # Step 6: Check Aztec CLI
+```
 aztec
+```
 
 # Step 7: Initialize Alpha Testnet
+```
 aztec-up alpha-testnet
+```
 
 # Step 8: Get Public IP
+```
 curl ipv4.icanhazip.com
+```
 
 # Step 9: Firewall Configuration
+```
 ufw allow 22
 ufw allow ssh
 ufw allow 40400
 ufw allow 8080
 ufw enable
+```
 
 # Step 10: Start Screen Session
+```
 screen -S aztec
+```
 
 # Step 11: Start Aztec Node (Replace Placeholder Values)
+```
 aztec start --node --archiver --sequencer \
   --network alpha-testnet \
   --l1-rpc-urls REPLACE \
@@ -130,17 +150,22 @@ aztec start --node --archiver --sequencer \
   --sequencer.coinbase REPLACE \
   --p2p.p2pIp REPLACE \
   --p2p.maxTxPoolSize 1000000000
+```
 
 # Step 12: Check Proven Block Number
+```
 curl -s -X POST -H 'Content-Type: application/json' \
 -d '{"jsonrpc":"2.0","method":"node_getL2Tips","params":[],"id":67}' \
 http://localhost:8080 | jq -r ".result.proven.number"
+```
 
 # Step 13: Get Archive Sibling Path (Replace Parameters)
+```
 curl -s -X POST -H 'Content-Type: application/json' \
 -d '{"jsonrpc":"2.0","method":"node_getArchiveSiblingPath","params":["REPLACE","REPLACE"],"id":67}' \
 http://localhost:8080 | jq -r ".result"
+```
 
 # Step 14: Useful Screen Commands
-# Minimize: Ctrl + A + D
-# Reattach: screen -r aztec
+# Minimize: ```Ctrl + A + D```
+# Reattach: ```screen -r aztec```
