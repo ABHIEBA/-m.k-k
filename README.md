@@ -6,7 +6,7 @@
 * CPU : 8-cores
 * Storage : 200-1000 GB SSD
 
-**You can run through :-**
+**II. You can run through :-**
 
 * Local PC ( Not Recommended )
 • One Click Node Deployment Platforms👇
