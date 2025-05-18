@@ -10,7 +10,17 @@
 
 ---
 
-## II. You Can Run Through
+## II. Prepare 
+
+- New Metamask Wallet
+- Load 1-3 Sepolia ETH 
+- Get L1 Execution Layer RPC (EL-RPC): Sepolia 
+- Get L1 Consensus Layer RPC (CL-RPC): Beacon
+
+---
+
+
+## III. You Can Run Through
 
 - Local PC *(Not Recommended)*  
 - One-Click Node Deployment Platforms:
@@ -20,7 +30,7 @@
 
 ---
 
-## III. Exclusive Tips
+## IV. Exclusive Tips
 
 ### 1. For Stress-Free Setup:
 Use one-click node deployment platforms.
@@ -59,7 +69,7 @@ Use one-click node deployment platforms.
 
 ---
 
-## IV. Guide & Commands
+## V. Guide & Commands
 
 # Step 1: Update System Packages
 ```
