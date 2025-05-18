@@ -166,6 +166,6 @@ curl -s -X POST -H 'Content-Type: application/json' \
 http://localhost:8080 | jq -r ".result"
 ```
 
-# Step 14: Useful Screen Commands
-# Minimize: ```Ctrl + A + D```
-# Reattach: ```screen -r aztec```
+## Step 14: Useful Screen Commands
+## Minimize: ```Ctrl + A + D```
+## Reattach: ```screen -r aztec```
