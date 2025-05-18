@@ -3,9 +3,7 @@
 **I. Requirements :-**
 
 • RAM : 16 GB
-
 • CPU : 8-cores
-
 • Storage : 200-1000 GB SSD
 
 **You can run through :-**
