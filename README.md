@@ -10,8 +10,8 @@
 
 * Local PC ( Not Recommended )
 * One Click Node Deployment Platforms👇
-https://www.mintair.xyz/dashboard
-https://app.easy-node.xyz/
+`https://www.mintair.xyz/dashboard`
+`https://app.easy-node.xyz/`
 * VPS 
 
 III. EXCLUSIVE TIPS :-
