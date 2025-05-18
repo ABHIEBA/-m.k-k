@@ -9,10 +9,10 @@
 **II. You can run through :-**
 
 * Local PC ( Not Recommended )
-• One Click Node Deployment Platforms👇
+* One Click Node Deployment Platforms👇
 - https://www.mintair.xyz/dashboard
 - https://app.easy-node.xyz/
-• VPS 
+* VPS 
 
 III. EXCLUSIVE TIPS :-
 
